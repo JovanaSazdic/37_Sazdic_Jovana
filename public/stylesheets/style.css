@@ -1,0 +1,29 @@
+body {
+    padding: 50px;
+    font: 13px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: aliceblue;
+    font-style: italic;
+    font-weight: bold;
+   
+   
+  }
+
+input {
+  display: block;
+  margin: 0 0 1em 5;
+  padding: .4em .4em;
+  width: 40%;
+  height: 40px;
+  outline: none; 
+  text-align: center;
+
+  
+}
+
+  a {
+    color:steelblue;
+    background-color: aliceblue;
+   
+    text-align: center;
+  }
+  

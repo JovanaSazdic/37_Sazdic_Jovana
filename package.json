@@ -1,0 +1,25 @@
+{
+  "name": "37_sazdic-_jovana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "37_sazdic-_jovana": "www.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0",
+    "body-parser": "^1.4.3",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pdfkit": "^0.9.1",
+    "nodemon": "^1.19.0"
+  }
+}

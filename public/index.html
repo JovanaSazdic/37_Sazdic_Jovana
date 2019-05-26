@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>< ></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1> Indeks telesne mase - BMI Kalkulator </h1>
+
+    <br><br>
+    <form action = "/pdf" method ="post" >
+        Ime:     <input type="text" name="ime" > <br/>
+        Prezime: <input type="text" name="prezime" > <br/>
+        <br/>
+        Izabrati pol:<br/>
+        <input type="radio" name="b" value="male"> Muski
+        <input type="radio" name="b" value="female"> Zenski<br><br/>
+        Visina u CM
+        <input type="text" id="cm" > <br/>
+        Tezina u KG
+        <input type="text" id="kg" > <br/><br/>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" value="Reset"><br/><br/>
+        <textarea name="result"  id="result"></textarea>
+
+        <script>
+            document.getElementById("submit").addEventListener("click", bmiCalculator);
+            function bmiCalculator(){
+                var cm = parseInt(document.getElementById("cm").value);
+                var kg = parseFloat(document.getElementById("kg").value);
+
+                var bmi;
+                var newCm= parseFloat(cm/100);
+
+                bmi = kg / (newCm * newCm);
+                bmi = bmi.toFixed(1);
+                console.log(bmi);
+
+                document.getElementById("result").innerHTML= bmi ;
+
+            }
+        </script>
+      <br><br>
+
+    </form>
+  </body>
+</html>
